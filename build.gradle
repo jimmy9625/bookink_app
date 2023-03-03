@@ -1,0 +1,28 @@
+
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'java'
+}
+
+
+group 'com.co.booking'
+
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    implementation('net.serenity-bdd:serenity-core:2.0.82')
+    implementation('net.serenity-bdd:serenity-junit:2.0.82')
+    implementation('net.serenity-bdd:serenity-screenplay:2.0.82')
+    implementation('net.serenity-bdd:serenity-screenplay-webdriver:2.0.82')
+    implementation('net.serenity-bdd:serenity-cucumber:1.9.45')
+    implementation('org.slf4j:slf4j-simple:1.7.25')
+    implementation group: 'io.appium', name: 'java-client', version: '6.1.0'
+    implementation group: 'org.jvnet.com4j', name: 'com4j', version: '2.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-android-driver', version: '2.33.0'
+
+}
+
