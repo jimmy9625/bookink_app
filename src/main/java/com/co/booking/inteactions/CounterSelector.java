@@ -2,9 +2,10 @@ package com.co.booking.inteactions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.TextContent;
 
-import static com.co.booking.userinterfaces.FormHotelInfo.VALUE;
+import static com.co.booking.userinterfaces.FormHotelInfo.*;
 
 public class CounterSelector implements Interaction {
 
@@ -19,7 +20,24 @@ public class CounterSelector implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        int value = Integer.parseInt(TextContent.of(VALUE.of(place)).viewedBy(actor).asString());
+        int numbeResived = Integer.parseInt(number);
+        int value= Integer.parseInt(VALUE.of(place).resolveFor(actor).getText());
+
+        System.out.println(numbeResived);
+
+
+        if (value < numbeResived) {
+            for (int i = value;  i< numbeResived; i++) {
+                actor.attemptsTo(Click.on(ADD_BUTTON.of(place)));
+            }
+
+        } else if (value > numbeResived) {
+            for (int i =numbeResived ; i<= value;i++ )
+            {
+                actor.attemptsTo(Click.on(REMOVE_BUTTON.of(place)));
+            }
+        }
+
 
 
     }

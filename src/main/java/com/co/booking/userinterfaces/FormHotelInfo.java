@@ -10,4 +10,7 @@ public class FormHotelInfo {
   public static  final Target DAY_CALENDAR= Target.the("day in the calendar ").locatedBy("//android.view.View[@content-desc='{0}']");
   public static final  Target BUTTON_SELECT_DATES=Target.the("BUTTON SELECT DATES").located(By.id("com.booking:id/facet_date_picker_confirm"));
   public static final Target  VALUE= Target.the("Selec value").locatedBy("//*[@resource-id='com.booking:id/group_config_{0}_count']//*[@resource-id='com.booking:id/bui_input_stepper_value']");
+  public static final Target ADD_BUTTON= Target.the("add button").locatedBy("//*[@resource-id='com.booking:id/group_config_{0}_count']//*[@resource-id='com.booking:id/bui_input_stepper_add_button']");
+  public static final Target REMOVE_BUTTON= Target.the("add button").locatedBy("//*[@resource-id='com.booking:id/group_config_{0}_count']//*[@resource-id='com.booking:id/bui_input_stepper_remove_button']");
+  public static final Target ROOMS = Target.the("target rooms").located(By.id("com.booking:id/facet_search_box_accommodation_occupancy"));
 }

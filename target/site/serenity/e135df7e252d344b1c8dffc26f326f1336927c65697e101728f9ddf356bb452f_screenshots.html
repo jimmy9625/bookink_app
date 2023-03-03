@@ -129,7 +129,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-03-2023 20:50</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-03-2023 23:42</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,7 +189,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Null pointer exception</span>
+                    <span class="error-message error-message-title">Cucumber exception: Arity mismatch: Step Definition 'com.co.booking.stepsdetinition.HotelReservationStepsDefinition.theUserCompletesTheReservationFormWithTheFollowingDetails() in file:/C:/Users/jaime/OneDrive/Escritorio/reto/appmobile/bookink_app/build/classes/java/test/' with pattern [^the user completes the reservation form with the following details:$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[First Name, Last Name, Email, Country, Mobile Phone, Purpose], [Jaime, Velasquez, jimmy9625@gmail.com, Colombia, 3225225155, Business]]]. </span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -205,11 +205,11 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>java.lang.NullPointerException </h4>
+                    <h4>cucumber.runtime.CucumberException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.co.booking.inteactions.SelectDay.performAs(SelectDay.java:42)<br />com.co.booking.tasks.SerachHotel.performAs(SerachHotel.java:21)<br />com.co.booking.stepsdetinition.HotelReservationStepsDefinition.theUserSearchesForHotelsWithTheFollowingInformation(HotelReservationStepsDefinition.java:33)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
                 </div>
@@ -219,28 +219,41 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource6581674525958846479.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b4a110e01c447a66f1ece2f863f8c5d1fa4cc9005f839e7a9fd790aef535cb27.png" title=" Given the user opens the hotel booking application" width="1080"/>
-                <img src="53a57e73ff8995066081e3f7669fe3d0efd32d21312f7224a5a96633902a296a.png" title=" When the user searches for hotels with the following information:
-| location | checkIn | checkOut | adults | rooms |
-| Cusco | 12-April-2029 | 12/04/2023 | 1 | 3 |" width="1080"/>
-                <img src="53a57e73ff8995066081e3f7669fe3d0efd32d21312f7224a5a96633902a296a.png" title=" User close auth" width="1080"/>
-                <img src="53a57e73ff8995066081e3f7669fe3d0efd32d21312f7224a5a96633902a296a.png" title=" user clicks on button close auth window" width="1080"/>
-                <img src="611b0a90451a57c7209b576133cd77cabb4d3693fa5b5c8ce42315de9a0dcea2.png" title=" user clicks on button close auth window (completed)" width="1080"/>
-                <img src="611b0a90451a57c7209b576133cd77cabb4d3693fa5b5c8ce42315de9a0dcea2.png" title=" User close auth (completed)" width="1080"/>
-                <img src="c7fc40ae74e0c4561609b12f70a722289e3a9acc97c7810f1ed912d60104429f.png" title=" user clicks on camp enter you destination" width="1080"/>
-                <img src="2ff72094092178b6209d14db349ad95af8574638830eb9277b68a7f6f8f746fd.png" title=" user clicks on camp enter you destination (completed)" width="1080"/>
-                <img src="2ff72094092178b6209d14db349ad95af8574638830eb9277b68a7f6f8f746fd.png" title=" user enters 'Cusco' into input your destination" width="1080"/>
-                <img src="18dd92fe5347599f860ef4093f7c2fce3b83379bdd46711c3a2204aafe1727ad.png" title=" user enters 'Cusco' into input your destination (completed)" width="1080"/>
-                <img src="18dd92fe5347599f860ef4093f7c2fce3b83379bdd46711c3a2204aafe1727ad.png" title=" user clicks on card city select" width="1080"/>
-                <img src="15bbe0c1244122b6d2ce5fa1dede0038d6f819844b8c965df86fa554eb3a429a.png" title=" user clicks on card city select (completed)" width="1080"/>
-                <img src="ec6a86db6a0b34ff0ec8d0f478edad0edbb6a65092d01392d9150f047392b595.png" title=" When the user searches for hotels with the following information:
-| location | checkIn | checkOut | adults | rooms |
-| Cusco | 12-April-2029 | 12/04/2023 | 1 | 3 | (completed): <span class='error-color'>ERROR</span>" width="1080"/>
+                <img src="9978bb5e9d59c281fd53a103a00a248ba9043673940cd60674d3f21067b52e5d.png" title=" Given the user opens the hotel booking application" width="1080"/>
+                <img src="9978bb5e9d59c281fd53a103a00a248ba9043673940cd60674d3f21067b52e5d.png" title=" When the user searches for hotels with the following information:
+| location | checkIn | checkOut | adults | rooms | children | ageChildren |
+| Cusco | 12 March 2023 | 15 March 2023 | 1 | 1 | 1 | 5 |" width="1080"/>
+                <img src="aac311320a2781892147ff27e573c5b83327b8466ba8f3c22ff1e5dba3f1ccae.png" title=" User close auth" width="1080"/>
+                <img src="aac311320a2781892147ff27e573c5b83327b8466ba8f3c22ff1e5dba3f1ccae.png" title=" user clicks on button close auth window" width="1080"/>
+                <img src="39a6c76ead601dca13551b367dfeac64509952db2e0109c439435f8a464f6428.png" title=" user clicks on button close auth window (completed)" width="1080"/>
+                <img src="39a6c76ead601dca13551b367dfeac64509952db2e0109c439435f8a464f6428.png" title=" User close auth (completed)" width="1080"/>
+                <img src="3e21421e72aa5f8e3d6ca57c9c02cefdaa9f8ab8d348c195c2c3449a93c0a26f.png" title=" user clicks on camp enter you destination" width="1080"/>
+                <img src="ef80a4abdcb5ae77f1502d126ed003c9e27f1eab0d87a1a3dcab56399dd6f8b6.png" title=" user clicks on camp enter you destination (completed)" width="1080"/>
+                <img src="ef80a4abdcb5ae77f1502d126ed003c9e27f1eab0d87a1a3dcab56399dd6f8b6.png" title=" user enters 'Cusco' into input your destination" width="1080"/>
+                <img src="75d327678ef48763e177984814968d6c55879fc08dd321a9087d70563e77b35e.png" title=" user enters 'Cusco' into input your destination (completed)" width="1080"/>
+                <img src="75d327678ef48763e177984814968d6c55879fc08dd321a9087d70563e77b35e.png" title=" user clicks on card city select" width="1080"/>
+                <img src="e496277a02027c55eefd3cd85bbc3c5f1a261f5a22225eeabc616ce3907aec5a.png" title=" user clicks on card city select (completed)" width="1080"/>
+                <img src="e496277a02027c55eefd3cd85bbc3c5f1a261f5a22225eeabc616ce3907aec5a.png" title=" user clicks on day in the calendar " width="1080"/>
+                <img src="d7e4a08f2ccbf78001706e184920b3091362fe05f04b4f72d1fdf5caef938a79.png" title=" user clicks on day in the calendar  (completed)" width="1080"/>
+                <img src="d7e4a08f2ccbf78001706e184920b3091362fe05f04b4f72d1fdf5caef938a79.png" title=" user clicks on day in the calendar " width="1080"/>
+                <img src="b563d6be68df14c754e9333bbe95b5287ac845683ecdfe77d1d1b2b26d6c29dd.png" title=" user clicks on day in the calendar  (completed)" width="1080"/>
+                <img src="b563d6be68df14c754e9333bbe95b5287ac845683ecdfe77d1d1b2b26d6c29dd.png" title=" user clicks on BUTTON SELECT DATES" width="1080"/>
+                <img src="d4c53f6472d913cd6d045b288d5c45ed439f26d789a617378319f6e5256a0974.png" title=" user clicks on BUTTON SELECT DATES (completed)" width="1080"/>
+                <img src="d4c53f6472d913cd6d045b288d5c45ed439f26d789a617378319f6e5256a0974.png" title=" user clicks on target rooms" width="1080"/>
+                <img src="649e8ca251aa3dab4c14941a24c10bd4c2eaeeadc3c46abb14b7fe75dfecd559.png" title=" user clicks on target rooms (completed)" width="1080"/>
+                <img src="649e8ca251aa3dab4c14941a24c10bd4c2eaeeadc3c46abb14b7fe75dfecd559.png" title=" user clicks on add button" width="1080"/>
+                <img src="2e7d80a44b9e7ada0c966a3c43a4baa874b1ae880b97f2033cae12c81a6626e3.png" title=" user clicks on add button (completed)" width="1080"/>
+                <img src="2e7d80a44b9e7ada0c966a3c43a4baa874b1ae880b97f2033cae12c81a6626e3.png" title=" user clicks on add button" width="1080"/>
+                <img src="86e77ad76b552a9a6850a964effe4d39d80d01fa2ac33de8435c51b1d8d81c18.png" title=" user clicks on add button (completed)" width="1080"/>
+                <img src="86e77ad76b552a9a6850a964effe4d39d80d01fa2ac33de8435c51b1d8d81c18.png" title=" user clicks on add button" width="1080"/>
+                <img src="fd310e6065fb0c04420fc716edfa1aa6c2b7df735b15369d9282aa6cdae9a813.png" title=" user clicks on add button (completed)" width="1080"/>
+                <img src="19d9f2e46a1d7c436c6da00a184be432bf4d0c82577a620db445f2aae26ef193.png" title=" user clicks on add button" width="1080"/>
+                <img src="cad7e5789c62410e28300f72c990f91fdaffa515b833dfd37e41c1909a03c625.png" title=" user clicks on add button (completed): <span class='error-color'>ERROR</span>" width="1080"/>
             </div>
         </div>
 

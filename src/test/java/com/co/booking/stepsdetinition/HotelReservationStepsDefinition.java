@@ -1,6 +1,6 @@
 package com.co.booking.stepsdetinition;
 
-import com.co.booking.models.HotelInfoOnlyAdult;
+import com.co.booking.models.BookingInfo;
 import com.co.booking.tasks.SerachHotel;
 import com.co.booking.utils.Driver;
 import cucumber.api.java.Before;
@@ -29,7 +29,7 @@ public class HotelReservationStepsDefinition {
 
 
     @When("^the user searches for hotels with the following information:$")
-    public void theUserSearchesForHotelsWithTheFollowingInformation(List<HotelInfoOnlyAdult> info) {
+    public void theUserSearchesForHotelsWithTheFollowingInformation(List<BookingInfo> info) {
         OnStage.theActorInTheSpotlight().attemptsTo(SerachHotel.whit(info.get(0)));
 
         try {

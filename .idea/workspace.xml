@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5364297c-1129-45b0-b1e4-6d9c6be518ee" name="Changes" comment="" />
+    <list default="true" id="5364297c-1129-45b0-b1e4-6d9c6be518ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/co/booking/inteactions/CounterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/co/booking/inteactions/CounterSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/co/booking/inteactions/SelectRoomsAndGuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/co/booking/inteactions/SelectRoomsAndGuest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/co/booking/models/HotelInfoOnlyAdult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/co/booking/models/BookingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/co/booking/tasks/SerachHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/co/booking/tasks/SerachHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/co/booking/userinterfaces/FormHotelInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/co/booking/userinterfaces/FormHotelInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/co/booking/stepsdetinition/HotelReservationStepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/co/booking/stepsdetinition/HotelReservationStepsDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/hotel_reservation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hotel_reservation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/e135df7e252d344b1c8dffc26f326f1336927c65697e101728f9ddf356bb452f_screenshots.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +42,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -48,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PruebaAutomatizacionMobile-main/PruebaAutomatizacion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,5 +111,27 @@
       <updated>1677712679768</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/co/booking/inteactions/CounterSelector.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
