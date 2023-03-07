@@ -1,4 +1,4 @@
-# bookink_app
+# booking_app
 
 # **Pruebas automatizadas para la aplicación móvil de Booking**
 Este repositorio contiene pruebas automatizadas para la funcionalidad de reserva de hotel en la aplicación móvil de Booking. Las pruebas están desarrolladas en Java utilizando el gestor de dependencias Gradle y el patrón de diseño Screenplay.
