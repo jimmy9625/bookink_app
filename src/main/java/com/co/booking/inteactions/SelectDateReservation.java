@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
 
 import static com.co.booking.userinterfaces.FormHotelInfo.BUTTON_SELECT_DATES;
-import static com.co.booking.userinterfaces.FormHotelInfo.DAY_CALENDAR;
 
 public class SelectDateReservation implements Interaction {
 
@@ -20,8 +19,10 @@ public class SelectDateReservation implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(Click.on(DAY_CALENDAR.of(checkIn)),
-                Click.on(DAY_CALENDAR.of(CheckOut)),
+        boolean find = false;
+
+        actor.attemptsTo(FindDate.whit(checkIn),
+                FindDate.whit(CheckOut),
                 Click.on(BUTTON_SELECT_DATES));
 
 

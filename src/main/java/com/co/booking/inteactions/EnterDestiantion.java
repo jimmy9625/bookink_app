@@ -23,7 +23,6 @@ public class EnterDestiantion implements Interaction {
         actor.attemptsTo(Click.on(DESTINATION),
                 Enter.theValue(location).into(DESTINATION_INPUT));
 
-
         actor.attemptsTo(Click.on(CITY));
 
     }

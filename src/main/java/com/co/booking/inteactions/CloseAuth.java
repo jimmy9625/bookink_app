@@ -11,12 +11,10 @@ public class CloseAuth implements Interaction {
     public <T extends Actor> void performAs(T actor) {
 
 
-
         actor.attemptsTo(Click.on(CLOSE_AUTH));
     }
 
-    public static  CloseAuth window()
-    {
+    public static CloseAuth window() {
         return new CloseAuth();
     }
 }
