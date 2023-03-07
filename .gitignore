@@ -1,5 +1,26 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
-# Ignore Gradle build output directory
-build
+# Gradle specific
+.gradle/
+build/
+
+# Screenplay specific
+serenity.properties
+target/
+
+# IDE specific
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Other
+node_modules/
